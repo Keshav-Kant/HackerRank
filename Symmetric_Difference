@@ -1,0 +1,18 @@
+m=int(input())
+a=input().split()
+n=int(input())
+b=input().split()
+a=set(a)
+b=set(b)
+
+diff=a.difference(b)
+diff1=b.difference(a)
+diff=list(diff)
+diff1=list(diff1)
+diff2=diff+diff1
+for i in range(0,len(diff2)):
+    diff2[i]=int(diff2[i])
+diff2.sort()
+
+for i in range(0,len(diff2)):
+    print(diff2[i])
